@@ -19,3 +19,32 @@ body {
   height: 100%;
 }
 
+//  transition css start
+
+.enter-active {
+  animation: fade-in .7s forwards;
+}
+.exit-active {
+  animation: fade-out .7s forwards;
+}
+
+@keyframes fade-in {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+//  transition css end
+

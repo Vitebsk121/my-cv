@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react';
 
+import TransitionLayout from './transitionLayout';
+
 type WrapperLayoutProps = {
   children: ReactNode | undefined;
 };
@@ -9,7 +11,9 @@ const WrapperLayout: React.FC<WrapperLayoutProps> = ({
 }: WrapperLayoutProps) => (
   <>
     <header />
-    <main>{children}</main>
+    <main>
+      <TransitionLayout>{children}</TransitionLayout>
+    </main>
     <footer />
   </>
 );
