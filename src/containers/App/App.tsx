@@ -2,12 +2,14 @@ import './App.scss';
 
 import React from 'react';
 
-const App = () => {
-  return (
-    <div className="app">
+import WrapperLayout from '../../Components/HOC/wrapperLayout';
+
+const App = () => (
+  <div className="app">
+    <WrapperLayout>
       <h1>Under development...</h1>
-    </div>
-  );
-};
+    </WrapperLayout>
+  </div>
+);
 
 export default App;
