@@ -2,7 +2,7 @@
   padding: 10px 0;
   display: grid;
   grid-template-columns: 1fr 3fr 2fr;
-  grid-auto-rows: minmax(50px, auto);
+  grid-auto-rows: minmax(30px, auto);
   grid-gap: 5px;
 }
 
@@ -47,4 +47,22 @@
     grid-column: 3/3;
     grid-row: 5/7;
   }
+}
+
+.cv__avatar {
+  width: 100%;
+}
+
+.cv__title,
+.cv__subTitle {
+  color: var(--font-color);
+}
+
+.cv__title {
+  font-size: 1.5rem;
+}
+
+.cv__subTitle {
+  font-size: 1rem;
+  font-weight: 400;
 }
