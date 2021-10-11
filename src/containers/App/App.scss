@@ -1,21 +1,31 @@
 .app {
   width: 100%;
   height: 100%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
   box-sizing: border-box;
-
-  &>h1 {
-    color: var(--font-color);
-  }
 }
 
 .darkTheme {
-  --font-color: white;
+  --font-color: #e1e1e1;
+  --background-primary: #333333;
 }
 
 .lightTheme {
   --font-color: #000000;
+  --background-primary: #333333;
+}
+
+.header,
+.main,
+.footer {
+  padding: 0 70px;
+}
+
+@media screen and (max-width: 400px) {
+  .header,
+  .main,
+  .footer {
+    padding: 0 20px;
+  }
 }

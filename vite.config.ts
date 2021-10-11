@@ -8,5 +8,5 @@ export default defineConfig({
   },
   base: './',
   plugins: [reactRefresh()],
-  publicDir: 'src/public',
+  publicDir: 'public',
 });

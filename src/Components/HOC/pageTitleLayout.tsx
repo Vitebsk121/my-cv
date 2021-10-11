@@ -2,14 +2,11 @@ import React, { ReactNode } from 'react';
 
 type PageTitleLayoutProps = {
   children: ReactNode | undefined;
-  title: string | undefined;
+  title: string;
 };
 
-const PageTitleLayout: React.FC<PageTitleLayoutProps> = ({
-  children,
-  title = 'Alexandr Demchenko CV',
-}: PageTitleLayoutProps) => {
-  document.title = title;
+const PageTitleLayout: React.FC<PageTitleLayoutProps> = ({ children, title }: PageTitleLayoutProps) => {
+  document.title = `Alexandr CV | ${title}`;
 
   return <>{children}</>;
 };
