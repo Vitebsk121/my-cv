@@ -6,7 +6,7 @@ type PageTitleLayoutProps = {
 };
 
 const PageTitleLayout: React.FC<PageTitleLayoutProps> = ({ children, title }: PageTitleLayoutProps) => {
-  document.title = `Alexandr CV | ${title}`;
+  document.title = `Alexandr Demchenko | ${title}`;
 
   return <>{children}</>;
 };

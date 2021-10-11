@@ -13,7 +13,10 @@ const WrapperLayout: React.FC<WrapperLayoutProps> = ({
   <>
     <Header />
     <main className="main">
-      <TransitionLayout>{children}</TransitionLayout>
+{/*TODO ADD TRANSITION*/}
+      {/*<TransitionLayout>*/}
+        {children}
+      {/*</TransitionLayout>*/}
     </main>
     <footer />
   </>
