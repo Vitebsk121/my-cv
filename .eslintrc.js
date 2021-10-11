@@ -23,6 +23,7 @@ module.exports = {
   plugins: ['simple-import-sort', 'prettier'],
   rules: {
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
+    'max-len': '120',
     'react/react-in-jsx-scope': 'off',
     'jsx-a11y/accessible-emoji': 'off',
     'react/prop-types': 'off',
