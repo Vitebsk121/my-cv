@@ -1,7 +1,7 @@
 import './Header.scss';
 
 import Switch from '@mui/material/Switch';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import useTypedSelector from '../../hooks/useTypedSelector';
@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = () => {
     setWindowSize(window.innerWidth);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.addEventListener('resize', updateWindowSize);
     return () => window.removeEventListener('resize', updateWindowSize);
   });
