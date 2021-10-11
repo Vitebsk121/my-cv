@@ -8,18 +8,26 @@
 
 .darkTheme {
   --font-color: #e1e1e1;
+  --font-color-notChang: #e1e1e1;
   --background-primary: #333333;
+  --background-secondary: #696969;
 }
 
 .lightTheme {
   --font-color: #000000;
+  --font-color-notChang: #e1e1e1;
   --background-primary: #333333;
+  --background-secondary: #ffffff;;
 }
 
 .header,
 .main,
 .footer {
   padding: 0 70px;
+}
+
+.main {
+  background-color: var(--background-secondary);
 }
 
 @media screen and (max-width: 600px) {
