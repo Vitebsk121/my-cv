@@ -1,7 +1,7 @@
 import { AppReducerActions, IAppReducerActionsTypes, IAppReducerState } from '../../types/appReducerTypes';
 
 const initialState: IAppReducerState = {
-  theme: 'darkTheme',
+  theme: 'lightTheme',
   menuIsOpen: false,
 };
 
