@@ -2,7 +2,7 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 50px 1fr 50px;
+  grid-template-rows: 50px 1fr 40px;
   box-sizing: border-box;
 }
 
@@ -11,13 +11,17 @@
   --font-color-notChang: #e1e1e1;
   --background-primary: #333333;
   --background-secondary: #696969;
+  --shadow-main: 0 0 10px 0 rgba(255, 255, 255, 0.5);
+  --background-code: #525252;
 }
 
 .lightTheme {
   --font-color: #000000;
   --font-color-notChang: #e1e1e1;
   --background-primary: #333333;
-  --background-secondary: #ffffff;;
+  --background-secondary: #ffffff;
+  --shadow-main: 0 0 10px 0 rgba(50, 50, 50, 0.5);
+  --background-code: #bdbdbd;
 }
 
 .header,
@@ -35,6 +39,6 @@
   .header,
   .main,
   .footer {
-    padding: 0 20px;
+    padding: 10px 20px;
   }
 }
