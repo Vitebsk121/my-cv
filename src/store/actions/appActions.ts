@@ -1,3 +1,4 @@
+import { setThemeToLocalStorage } from '../../services/localStorage';
 import { AppReducerActions } from '../../types/appReducerTypes';
 
 export const openMenu = () => ({
@@ -8,10 +9,16 @@ export const closeMenu = () => ({
   type: AppReducerActions.MENU_CLOSE,
 });
 
-export const darkTheme = () => ({
-  type: AppReducerActions.DARK_THEME,
-});
+export const darkTheme = () => (dispatch: (arg0: { type: AppReducerActions }) => void) => {
+  setThemeToLocalStorage('darkTheme');
+  dispatch({
+    type: AppReducerActions.DARK_THEME,
+  });
+};
 
-export const lightTheme = () => ({
-  type: AppReducerActions.LIGHT_THEME,
-});
+export const lightTheme = () => (dispatch: (arg0: { type: AppReducerActions }) => void) => {
+  setThemeToLocalStorage('lightTheme');
+  dispatch({
+    type: AppReducerActions.LIGHT_THEME,
+  });
+};

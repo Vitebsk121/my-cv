@@ -26,6 +26,17 @@ const Header: React.FC<HeaderProps> = () => {
     return () => window.removeEventListener('resize', updateWindowSize);
   });
 
+  useEffect(() => {
+    const localTheme = localStorage.getItem('theme');
+    if (localTheme === null) {
+      localStorage.setItem('theme', theme);
+    } else if (localTheme === 'lightTheme') {
+      dispatch(lightTheme());
+    } else {
+      dispatch(darkTheme());
+    }
+  }, []);
+
   const themeHandler = () => {
     if (theme === 'darkTheme') {
       dispatch(lightTheme());
@@ -38,7 +49,7 @@ const Header: React.FC<HeaderProps> = () => {
     <div className="header">
       <MenuBurger />
       <div className="logo" />
-      <Switch size={windowSize < 400 ? 'small' : 'medium'} onChange={themeHandler} />
+      <Switch size={windowSize < 400 ? 'small' : 'medium'} checked={theme === 'darkTheme'} onChange={themeHandler} />
       <Drawer />
       <Backdrop />
     </div>

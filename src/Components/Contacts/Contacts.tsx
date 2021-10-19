@@ -1,9 +1,9 @@
 import './Contacts.scss';
 
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import HomeWorkIcon from '@mui/icons-material/HomeWork';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import TelegramIcon from '@mui/icons-material/Telegram';
-import HomeWorkIcon from '@mui/icons-material/HomeWork';
 import React from 'react';
 
 import useTypedSelector from '../../hooks/useTypedSelector';
@@ -34,10 +34,10 @@ const Contacts: React.FC<ContactsProps> = () => {
         </a>
       </h4>
       <h4 className="title">
-        <h3 className="subtitle link">
+        <div className="subtitle link">
           <HomeWorkIcon fontSize="small" color={theme === 'lightTheme' ? 'primary' : 'action'} />
           <p className="link-title">Moscow</p>
-        </h3>
+        </div>
       </h4>
     </>
   );
