@@ -14,6 +14,8 @@
   --shadow-main: 0 0 10px 0 rgba(255, 255, 255, 0.5);
   --background-code: #525252;
   --font-color-404: #5dadbb;
+  --background-card-before: linear-gradient(180deg, #1876d2 0%, rgba(0,0,0,0) 100%);
+  --background-card-after: linear-gradient(357.17deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
 }
 
 .lightTheme {
@@ -24,6 +26,8 @@
   --shadow-main: 0 0 10px 0 rgba(50, 50, 50, 0.5);
   --background-code: #bdbdbd;
   --font-color-404: #5dadbb;
+  --background-card-before: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  --background-card-after: linear-gradient(357.17deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .header,
