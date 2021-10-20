@@ -5,10 +5,10 @@ import React from 'react';
 import AboutCv from '../../../Components/AboutCV/AboutCV';
 import Avatar from '../../../Components/Avatar/Avatar';
 import Contacts from '../../../Components/Contacts/Contacts';
+import EducationCV from '../../../Components/EducationCV/EducationCV';
+import ExperienceCV from '../../../Components/ExperienceCV/ExperienceCV';
 import PageTitleLayout from '../../../Components/HOC/pageTitleLayout';
 import SkillsCV from '../../../Components/SkillsCV/SkillsCV';
-import EducationCV from "../../../Components/EducationCV/EducationCV";
-import ExperienceCV from "../../../Components/ExperienceCV/ExperienceCV";
 
 type CVPageProps = {};
 
@@ -34,7 +34,7 @@ const CVPage: React.FC<CVPageProps> = () => (
       <div className="code">
         <h3 className="title">Code example</h3>
         <h4 className="subtitle">
-          <pre className='codeExample'>
+          <pre className="codeExample">
             {`
   function isPalindrome(line) {
     const str = String(line);
