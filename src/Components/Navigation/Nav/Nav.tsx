@@ -30,6 +30,11 @@ const Nav: React.FC<NavProps> = () => {
             About
           </Link>
         </li>
+        <li role="none" onClick={menuHandler} className="navItem">
+          <Link className="navLink" to="/projects">
+            Projects
+          </Link>
+        </li>
       </ul>
     </nav>
   );
