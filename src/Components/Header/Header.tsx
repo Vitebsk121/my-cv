@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import useTypedSelector from '../../hooks/useTypedSelector';
+import { useWindowWidth } from '../../hooks/useWindowWidth';
 import { darkTheme, lightTheme } from '../../store/actions/appActions';
 import Drawer from '../Navigation/Drawer/Drawer';
 import MenuBurger from '../Navigation/MenuBurger/MenuBurger';
@@ -17,14 +18,7 @@ const Header: React.FC<HeaderProps> = () => {
   const dispatch = useDispatch();
   const { theme } = useTypedSelector((state) => state.appState);
 
-  const updateWindowSize = () => {
-    setWindowSize(window.innerWidth);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', updateWindowSize);
-    return () => window.removeEventListener('resize', updateWindowSize);
-  });
+  useWindowWidth(setWindowSize);
 
   useEffect(() => {
     const localTheme = localStorage.getItem('theme');
