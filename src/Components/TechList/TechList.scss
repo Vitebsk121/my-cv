@@ -1,0 +1,77 @@
+.techList {
+  position: relative;
+  margin-bottom: 50px;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.techItem {
+  position: static;
+  max-width: 80px;
+  max-height: 80px;
+  margin: 10px 10px;
+
+  &.enter-active {
+    left: 0;
+    top: 0;
+    padding: inherit;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    animation: tech-in 1.5s forwards;
+  }
+
+  &.exit-active {
+    position: absolute;
+    animation: tech-out 1.5s forwards;
+  }
+}
+
+@keyframes tech-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tech-out {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .techItem {
+    max-width: 60px;
+    max-height: 60px;
+    margin: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .techItem {
+    max-width: 40px;
+    max-height: 40px;
+    margin: 5px 5px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .techItem {
+    max-width: 30px;
+    max-height: 30px;
+    margin: 5px 5px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .techList {
+    flex-wrap: wrap;
+  }
+}
