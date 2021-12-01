@@ -15,6 +15,7 @@
   justify-content: space-between;
   transition: all .5s;
   position: relative;
+  cursor: pointer;
 
   &:hover {
     transform: translateY(-3px);
