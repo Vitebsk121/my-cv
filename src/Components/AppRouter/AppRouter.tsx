@@ -2,7 +2,6 @@ import React from 'react';
 import { Redirect, Route, Switch, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
-import ErrorPage404 from '../../containers/Pages/ErrorPage404/ErrorPage404';
 import routes from '../../router';
 
 const AppRouter: React.FC = () => {
@@ -22,7 +21,7 @@ const AppRouter: React.FC = () => {
             </Route>
           ))}
           <Redirect from="/" to="/cv" exact />
-          <Route component={ErrorPage404} />
+          <Redirect to="/404" exact />
         </Switch>
       </CSSTransition>
     </TransitionGroup>
@@ -30,3 +29,5 @@ const AppRouter: React.FC = () => {
 };
 
 export default AppRouter;
+
+// TODO пофиксить ошибку с несуществующими проектами!
