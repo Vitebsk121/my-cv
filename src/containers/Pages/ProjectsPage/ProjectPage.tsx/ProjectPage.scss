@@ -1,0 +1,25 @@
+.projectHeader {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projectTitle,
+.projectMessage {
+  color: var(--font-color);
+}
+
+.projectLink {
+  color: var(--font-color-404);
+  text-decoration: none;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.projectPic {
+  width: 60%;
+}
