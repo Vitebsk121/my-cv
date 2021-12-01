@@ -10,9 +10,11 @@ import useTypedSelector from '../../hooks/useTypedSelector';
 import { useWindowWidth } from '../../hooks/useWindowWidth';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
-type CardsFieldProps = {};
+type CardsFieldProps = {
+  setCurrentProjectID: React.Dispatch<React.SetStateAction<number>>;
+};
 
-const CardsField: React.FC<CardsFieldProps> = () => {
+const CardsField: React.FC<CardsFieldProps> = ({ setCurrentProjectID }) => {
   const { theme } = useTypedSelector((state) => state.appState);
   const [page, setPage] = useState(1);
   const [windowSize, setWindowSize] = useState(window.innerWidth);
@@ -67,6 +69,8 @@ const CardsField: React.FC<CardsFieldProps> = () => {
           imageURL={project.imageURL}
           title={project.title}
           shortDescription={project.shortDescription}
+          id={project.id}
+          setCurrentProjectID={setCurrentProjectID}
         />
       ))}
       <div className="arrow">
