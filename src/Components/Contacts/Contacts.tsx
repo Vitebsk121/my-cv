@@ -14,7 +14,7 @@ const Contacts: React.FC<ContactsProps> = () => {
   const { theme } = useTypedSelector((state) => state.appState);
   return (
     <>
-      <h3 className="title">Contacts</h3>
+      <h3 className="title">Контакты</h3>
       <h4 className="title">
         <a className="subtitle link" href="tel:+79778480811">
           <PhoneIphoneIcon fontSize="small" color={theme === 'lightTheme' ? 'primary' : 'action'} />
@@ -36,7 +36,7 @@ const Contacts: React.FC<ContactsProps> = () => {
       <h4 className="title">
         <div className="subtitle link">
           <HomeWorkIcon fontSize="small" color={theme === 'lightTheme' ? 'primary' : 'action'} />
-          <p className="link-title">Moscow</p>
+          <p className="link-title">Москва</p>
         </div>
       </h4>
     </>

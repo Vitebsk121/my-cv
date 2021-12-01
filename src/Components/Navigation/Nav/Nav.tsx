@@ -22,17 +22,17 @@ const Nav: React.FC<NavProps> = () => {
       <ul className="navList">
         <li role="none" onClick={menuHandler} className="navItem">
           <Link className="navLink" to="/">
-            My CV
+            Резюме
           </Link>
         </li>
         <li role="none" onClick={menuHandler} className="navItem">
           <Link className="navLink" to="/about">
-            About
+            Об этом прокте
           </Link>
         </li>
         <li role="none" onClick={menuHandler} className="navItem">
           <Link className="navLink" to="/projects">
-            Projects
+            Мои проекты
           </Link>
         </li>
       </ul>

@@ -13,13 +13,13 @@ import SkillsCV from '../../../Components/SkillsCV/SkillsCV';
 type CVPageProps = {};
 
 const CVPage: React.FC<CVPageProps> = () => (
-  <PageTitleLayout title="CV">
+  <PageTitleLayout title="Резюме">
     <div className="container">
       <div className="avatar">
         <Avatar />
       </div>
       <div className="name">
-        <h3 className="title">Alexandr Demchenko</h3>
+        <h3 className="title">Александр Демченко</h3>
         <h4 className="subtitle">Junior Software Developer</h4>
       </div>
       <div className="contacts">
@@ -32,7 +32,7 @@ const CVPage: React.FC<CVPageProps> = () => (
         <SkillsCV />
       </div>
       <div className="code">
-        <h3 className="title">Code example</h3>
+        <h3 className="title">Пример кода</h3>
         <h4 className="subtitle">
           <pre className="codeExample">
             {`

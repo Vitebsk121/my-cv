@@ -6,7 +6,7 @@ type SkillsCVProps = {};
 
 const SkillsCV: React.FC<SkillsCVProps> = () => (
   <>
-    <h3 className="title">Skills</h3>
+    <h3 className="title">Навыки</h3>
     <ul className="skillsList">
       <li>
         <h4 className="subtitle">JavaScrypt</h4>
