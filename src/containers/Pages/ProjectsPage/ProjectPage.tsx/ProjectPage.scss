@@ -1,0 +1,29 @@
+.projectHeader {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.projectTitle,
+.projectMessage {
+  color: var(--font-color);
+}
+
+.projectTitle {
+  padding-top: 20px;
+}
+
+.projectLink {
+  color: var(--font-color-404);
+  text-decoration: none;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.projectPic {
+  width: 60%;
+}

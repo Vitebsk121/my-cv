@@ -1,0 +1,29 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-primary);
+}
+
+.contactIcon {
+  width: 25px;
+  height: 25px;
+  background-image: url('https://edwinkirabo.me/UI/Images/GitHub%20Icon.png');
+  background-size: cover;
+}
+
+.contactLink {
+  text-decoration: none;
+  width: fit-content;
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  color: white;
+  opacity: 0.7;
+  transition: all 0.5s;
+
+  &:hover {
+    color: white;
+    opacity: 1;
+  }
+}

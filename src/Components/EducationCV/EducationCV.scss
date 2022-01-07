@@ -1,0 +1,39 @@
+.educationList {
+  list-style-type: none;
+
+  &>li {
+    position: relative;
+  }
+  &>li:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    transform: translateY(-50%);
+    left: -7px;
+    width: 10px;
+    height: 10px;
+    background-color: #89c6ff;
+    border-radius: 50%;
+  }
+}
+
+.educationSubList {
+  margin-left: 40px;
+  list-style-type: none;
+
+  &>li {
+    position: relative;
+  }
+  &>li:before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    transform: translateY(-50%);
+    left: -7px;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid #89c6ff;
+  }
+}

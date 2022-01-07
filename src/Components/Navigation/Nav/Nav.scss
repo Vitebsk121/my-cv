@@ -1,0 +1,30 @@
+.navMenu {
+
+}
+
+.navList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItem {
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.navLink {
+  color: var(--font-color-notChang);
+  text-decoration: none;
+  opacity: 0.8;
+
+  &.colorLink {
+    color: var(--font-color-404);
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}

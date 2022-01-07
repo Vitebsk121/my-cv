@@ -1,0 +1,35 @@
+.game {
+  margin-top: 40px;
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(35, auto);
+}
+
+.shadowItem {
+  position: relative;
+  width: 10px;
+  height: 10px;
+}
+
+.gameItem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background-code);
+  transition: opacity 2s ease-out;
+
+  &:hover {
+    opacity: 0;
+    transition: 0s;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .shadowItem {
+    width: 7px;
+    height: 7px;
+  }
+}

@@ -1,0 +1,175 @@
+.container {
+  display: grid;
+  grid-template-columns: 200px 2fr 1fr;
+  grid-template-rows: 200px 80px 1fr 1fr;
+  gap: 10px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "avatar about education"
+    "name about education"
+    "contacts skills experience"
+    ". code english";
+}
+
+.avatar {
+  grid-area: avatar;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-main);
+}
+
+.englishLevel {
+  grid-area: english;
+}
+
+.name {
+  grid-area: name;
+  border-bottom: 1px solid #89c6ff;
+}
+
+.about {
+  grid-area: about;
+  border-bottom: 1px solid #89c6ff;
+}
+
+.skills {
+  grid-area: skills;
+  border-bottom: 1px solid #89c6ff;
+}
+
+.code {
+  grid-area: code;
+}
+
+.contacts {
+  grid-area: contacts;
+}
+
+.education {
+  grid-area: education;
+  border-bottom: 1px solid #89c6ff;
+}
+
+.experience {
+  grid-area: experience;
+  border-bottom: 1px solid #89c6ff;
+}
+
+.links { grid-area: links; }
+
+.title,
+.subtitle {
+  color: var(--font-color);
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  opacity: 0.8;
+  font-size: 0.9rem;
+  font-weight: 400;
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  &.link {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+  }
+
+  &.link:hover {
+    opacity: 1;
+  }
+}
+
+.codeExample {
+  background-color: var(--background-code);
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 50px minmax(100px, auto);
+    gap: 10px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "avatar name"
+      "avatar contacts"
+      "about about"
+      "skills skills"
+      "code code"
+      "education education"
+      "experience experience"
+      "english english";
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 50px 50px minmax(50px, auto);
+    gap: 10px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "avatar name"
+      "avatar contacts"
+      ". contacts"
+      "about about"
+      "skills skills"
+      "code code"
+      "education education"
+      "experience experience"
+      "english english";
+  }
+
+  .title {
+    font-size: 0.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.6rem;
+  }
+
+  .codeExample {
+    font-size: 0.45rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 250px;
+    grid-template-rows: 250px minmax(50px, auto);
+    gap: 10px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "avatar"
+      "name"
+      "contacts"
+      "about"
+      "skills"
+      "code"
+      "education"
+      "experience"
+      "english";
+  }
+}

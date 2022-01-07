@@ -1,0 +1,21 @@
+.drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px 10px;
+  box-sizing: border-box;
+  background-color: var(--background-primary);
+  transform: translateX(-320px);
+  transition: transform .4s ease-in-out;
+  z-index: 100;
+
+  &.open {
+    transform: translateX(0px);
+  }
+}
