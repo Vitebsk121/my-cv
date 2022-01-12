@@ -9,10 +9,10 @@ const SkillsCV: React.FC<SkillsCVProps> = () => (
     <h3 className="title">Навыки</h3>
     <ul className="skillsList">
       <li>
-        <h4 className="subtitle">JavaScrypt</h4>
+        <h4 className="subtitle">JavaScript</h4>
       </li>
       <li>
-        <h4 className="subtitle">TypeScrypt</h4>
+        <h4 className="subtitle">TypeScript</h4>
       </li>
       <li>
         <h4 className="subtitle">HTML</h4>
